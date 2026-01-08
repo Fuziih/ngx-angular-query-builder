@@ -1,27 +1,47 @@
 {
   "name": "ngx-angular-query-builder",
-  "version": "18.0.1-angular19",
-  "description": "Fork of ngx-angular-query-builder with Angular 19+ support",
-  "peerDependencies": {
-    "@angular/common": ">=18 <22",
-    "@angular/core": ">=18 <22"
-  },
-  "dependencies": {
-    "tslib": "^2.6.2"
-  },
-  "main": "dist/ngx-angular-query-builder/bundles/ngx-angular-query-builder.umd.js",
-  "module": "dist/ngx-angular-query-builder/fesm2015/ngx-angular-query-builder.mjs",
-  "es2015": "dist/ngx-angular-query-builder/fesm2015/ngx-angular-query-builder.mjs",
-  "typings": "dist/ngx-angular-query-builder/ngx-angular-query-builder.d.ts",
+  "version": "21.0.0-alpha.1",
   "scripts": {
     "ng": "ng",
-    "build": "ng build ngx-angular-query-builder",
+    "start": "ng serve",
     "build-demo": "ng build demo",
+    "build-package": "ng build ngx-angular-query-builder",
     "watch-package": "ng build ngx-angular-query-builder --watch --configuration development",
     "watch-demo": "ng build demo --watch --configuration development",
     "test": "ng test",
-    "prepare": "ng build ngx-angular-query-builder",
     "prettier": "npx prettier --write **"
   },
-  "license": "MIT"
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^21.0.7",
+    "@angular/cdk": "^21.0.5",
+    "@angular/common": "^21.0.7",
+    "@angular/compiler": "^21.0.7",
+    "@angular/core": "^21.0.7",
+    "@angular/forms": "^21.0.7",
+    "@angular/material": "^21.0.5",
+    "@angular/platform-browser": "^21.0.7",
+    "@angular/platform-browser-dynamic": "^21.0.7",
+    "@angular/router": "^21.0.7",
+    "rxjs": "^7.8.1",
+    "tslib": "^2.5.0",
+    "zone.js": "~0.15.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^21.0.5",
+    "@angular/cli": "^21.0.5",
+    "@angular/compiler-cli": "^21.0.7",
+    "@angular/language-service": "^21.0.7",
+    "@types/jasmine": "^5.1.4",
+    "@types/node": "^20.11.21",
+    "jasmine-core": "~5.1.2",
+    "karma": "~6.4.3",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage-istanbul-reporter": "^3.0.3",
+    "karma-coverage": "^2.2.1",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "^2.1.0",
+    "ng-packagr": "21.0.1",
+    "typescript": "5.9.3"
+  }
 }
